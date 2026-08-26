@@ -41,7 +41,7 @@
     "_note": "TODO: replace every null with the price currently quoted on the live site. null renders as 'Price on request' and disables that card's pay button.",
     "currency": "USD",
     "currencySymbol": "$",
-    "note": "Prices are per document and include the Supreme Court apostille fee. Courier and notarisation are quoted separately where applicable."
+    "note": "Prices are per document and include the Supreme Court apostille fee, express handling included. Courier, registry retrieval and drafting are quoted separately where applicable."
   },
   "services": [
     {
@@ -122,7 +122,7 @@
     {
       "id": "express",
       "name": "Express Handling",
-      "blurb": "Priority preparation and lodgement for time-critical closings, bank account openings and filing deadlines. Add to any service above.",
+      "blurb": "Priority preparation and lodgement for time-critical closings, bank account openings and filing deadlines. Handled at the same flat rate — there is no express surcharge.",
       "includes": [
         "Priority preparation same day",
         "Lodged at the next available Court session",
