@@ -78,6 +78,8 @@ src/layout.html     ← the shared page shell: header, footer, meta, WhatsApp bu
 src/pages/*.html    ← one file per page: JSON front matter, then "---", then the body
 assets/css/         ← the Tulum design system
 assets/js/main.js   ← nav, scroll reveals, enquiry form, PayPal buttons
+assets/img/         ← favicon and the social share image
+tools/og-image.*    ← regenerates the share card (dev only, needs playwright)
 ```
 
 Everything in the repo root ending in `.html`, plus `sitemap.xml` and `robots.txt`, is
@@ -137,6 +139,23 @@ Tulum palette, defined as CSS custom properties at the top of `assets/css/styles
 
 Type is Fraunces (display) over Inter (body), loaded from Google Fonts with system fallbacks.
 The recurring arch shape in the hero is the Tulum motif; change it in one place, `.arch`.
+
+## Social share image
+
+`assets/img/og-cover.png` (1200×630) is what appears when the site is pasted into WhatsApp,
+Slack, LinkedIn or a message. Without it a shared link renders as a bare grey box — which
+matters here, because WhatsApp is the main enquiry channel.
+
+To change it, edit `tools/og-image.html` and re-render:
+
+```bash
+npm i playwright && npx playwright install chromium
+node tools/og-image.mjs
+```
+
+The committed image was rendered in an environment without access to Google Fonts, so its
+headline is set in the fallback serif rather than Fraunces. Re-running the command above on a
+machine with normal internet access will regenerate it in the real brand typeface.
 
 ## Notes on behaviour
 
