@@ -7,7 +7,7 @@
     "tagline": "Seychelles apostille & document legalisation, handled end to end.",
     "description": "Apostille and legalisation of Seychelles and offshore company documents, powers of attorney, and personal certificates — prepared, notarised and apostilled through the Supreme Court of Seychelles by Victoria Law Firm.",
     "locale": "en_GB",
-    "founded": "Victoria, Mahé, Republic of Seychelles"
+    "founded": "Eden House, Eden Island, Republic of Seychelles"
   },
   "contact": {
     "whatsapp": "2482515565",
@@ -17,11 +17,17 @@
     "phone": "TODO_PHONE",
     "addressLines": [
       "Victoria Law Firm",
-      "TODO — street / building",
-      "Victoria, Mahé",
+      "Eden House",
+      "Eden Island",
       "Republic of Seychelles"
     ],
-    "hours": "Monday to Friday, 08:30 – 16:30 (Seychelles time, GMT+4)"
+    "hours": "Monday to Friday, 08:30 – 16:30 (Seychelles time, GMT+4)",
+    "addressStructured": {
+      "street": "Eden House",
+      "locality": "Eden Island",
+      "country": "SC"
+    },
+    "locationShort": "Eden Island · Republic of Seychelles"
   },
   "paypal": {
     "_note": "mode = 'paypalme' (only needs handle) or 'sdk' (needs clientId from a PayPal REST app). 'sdk' renders real PayPal Smart Buttons; 'paypalme' renders a pre-filled PayPal.Me payment link. If neither is configured the site falls back to a 'Request an invoice' button, so it never shows a broken checkout.",
