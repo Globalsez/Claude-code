@@ -1,0 +1,153 @@
+{
+  "_readme": "SINGLE SOURCE OF TRUTH. Edit this file, then run `node build.js`. Anything marked TODO must be filled in before going live.",
+
+  "site": {
+    "name": "Apostille Seychelles",
+    "legalName": "Victoria Law Firm",
+    "url": "https://apostilleseychelles.com",
+    "tagline": "Seychelles apostille & document legalisation, handled end to end.",
+    "description": "Apostille and legalisation of Seychelles and offshore company documents, powers of attorney, and personal certificates — prepared, notarised and apostilled through the Supreme Court of Seychelles by Victoria Law Firm.",
+    "locale": "en_GB",
+    "founded": "Victoria, Mahé, Republic of Seychelles"
+  },
+
+  "contact": {
+    "whatsapp": "TODO_WHATSAPP_E164",
+    "whatsappDisplay": "TODO — e.g. +248 2 XXX XXX",
+    "whatsappMessage": "Hello Apostille Seychelles — I would like a quote for an apostille.",
+    "email": "TODO_EMAIL",
+    "phone": "TODO_PHONE",
+    "addressLines": [
+      "Victoria Law Firm",
+      "TODO — street / building",
+      "Victoria, Mahé",
+      "Republic of Seychelles"
+    ],
+    "hours": "Monday to Friday, 08:30 – 16:30 (Seychelles time, GMT+4)"
+  },
+
+  "paypal": {
+    "_note": "mode = 'paypalme' (only needs handle) or 'sdk' (needs clientId from a PayPal REST app). 'sdk' renders real PayPal Smart Buttons; 'paypalme' renders a pre-filled PayPal.Me payment link. If neither is configured the site falls back to a 'Request an invoice' button, so it never shows a broken checkout.",
+    "mode": "paypalme",
+    "payPalMeHandle": "TODO_PAYPALME_HANDLE",
+    "clientId": "",
+    "businessEmail": "TODO_PAYPAL_BUSINESS_EMAIL",
+    "currency": "USD",
+    "accountName": "Victoria Law Firm"
+  },
+
+  "pricing": {
+    "_note": "TODO: replace every null with the price currently quoted on the live site. null renders as 'Price on request' and disables that card's pay button.",
+    "currency": "USD",
+    "currencySymbol": "$",
+    "note": "Prices are per document and include the Supreme Court apostille fee. Courier and notarisation are quoted separately where applicable."
+  },
+
+  "services": [
+    {
+      "id": "seychelles-company",
+      "name": "Seychelles Company Documents",
+      "blurb": "Certificate of Incorporation, Memorandum & Articles, Certificate of Good Standing, Incumbency, registers of directors and shareholders — retrieved, certified and apostilled.",
+      "includes": ["Registry retrieval where required", "Notarial certification of copies", "Supreme Court apostille", "Scanned copy released same day as issue"],
+      "turnaround": "2–3 business days",
+      "price": null,
+      "popular": true,
+      "icon": "building"
+    },
+    {
+      "id": "bvi-company",
+      "name": "BVI Company Documents",
+      "blurb": "British Virgin Islands corporate records legalised for banking, redomiciliation and cross-border transactions — the documents compliance teams ask for, in the form they accept.",
+      "includes": ["Certificate of Incorporation & Good Standing", "Registered agent certification", "Apostille under the Hague Convention", "Worldwide courier of originals"],
+      "turnaround": "3–5 business days",
+      "price": null,
+      "popular": false,
+      "icon": "globe"
+    },
+    {
+      "id": "power-of-attorney",
+      "name": "Power of Attorney",
+      "blurb": "Drafted or reviewed by a Seychelles attorney, executed before a notary, then apostilled — so it is accepted first time by the receiving jurisdiction.",
+      "includes": ["Attorney review of wording", "Notarial execution", "Supreme Court apostille", "Certified copies on request"],
+      "turnaround": "2–3 business days",
+      "price": null,
+      "popular": false,
+      "icon": "seal"
+    },
+    {
+      "id": "personal-documents",
+      "name": "Personal Certificates",
+      "blurb": "Birth, marriage and death certificates, police clearance and affidavits — legalised for immigration, marriage abroad, residency and citizenship applications.",
+      "includes": ["Civil Status retrieval where required", "Certified true copies", "Supreme Court apostille", "Tracked international delivery"],
+      "turnaround": "2–4 business days",
+      "price": null,
+      "popular": false,
+      "icon": "certificate"
+    },
+    {
+      "id": "educational",
+      "name": "Educational Documents",
+      "blurb": "Degrees, diplomas and academic transcripts authenticated and apostilled for employment, professional registration and further study overseas.",
+      "includes": ["Verification with the issuing institution", "Notarial certification", "Supreme Court apostille", "Digital copy on completion"],
+      "turnaround": "3–5 business days",
+      "price": null,
+      "popular": false,
+      "icon": "cap"
+    },
+    {
+      "id": "express",
+      "name": "Express Handling",
+      "blurb": "Priority preparation and lodgement for time-critical closings, bank account openings and filing deadlines. Add to any service above.",
+      "includes": ["Priority preparation same day", "Lodged at the next available Court session", "Named point of contact", "Progress updates by WhatsApp"],
+      "turnaround": "24–48 hours where the Court permits",
+      "price": null,
+      "popular": false,
+      "icon": "bolt"
+    }
+  ],
+
+  "faqs": [
+    {
+      "q": "What is an apostille?",
+      "a": "An apostille is a certificate attached to a public document that authenticates the signature and seal on it, so the document is recognised in every country party to the 1961 Hague Apostille Convention. Seychelles has been a party since 1979, and apostilles here are issued by the Supreme Court of Seychelles. Once a document carries an apostille, no further embassy or consular legalisation is needed in any of the 120+ member states."
+    },
+    {
+      "q": "Can I not just do this myself at the Supreme Court?",
+      "a": "You can. The Supreme Court at Ile du Port issues apostilles for a fixed statutory fee, with walk-in submission on limited days and collection two business days later, in cash. What we do is everything around that: confirming the document is in a form the Court will accept, arranging notarisation or certified copies where the original cannot be surrendered, retrieving records from the Registry or Civil Status, attending Court on your behalf, and couriering the originals to you anywhere in the world. If you are in Seychelles with a document already in order, going yourself is often the cheapest route — and we will tell you so."
+    },
+    {
+      "q": "Do you need my original documents?",
+      "a": "Usually yes for personal certificates, because the Court apostilles the original or a notarially certified copy of it. For company documents we can normally work from records we retrieve or from registered agent certified copies, so nothing of yours leaves your hands. Tell us what you have and we will confirm before you post anything."
+    },
+    {
+      "q": "How long does it take?",
+      "a": "Most straightforward documents are completed in two to three business days from the point we have everything we need. Documents requiring retrieval from a registry, verification with an issuing institution, or notarial execution take longer. Express handling is available where the Court's sitting days allow it."
+    },
+    {
+      "q": "Do you handle documents from outside Seychelles?",
+      "a": "We regularly handle British Virgin Islands corporate records and documents from other offshore jurisdictions. A document issued in another country must be apostilled by the competent authority of that country, not by Seychelles — but we coordinate that process for you and can act as the single point of contact for a multi-jurisdiction set."
+    },
+    {
+      "q": "How do I pay?",
+      "a": "By PayPal on this site, using the card or PayPal balance of your choice, or by bank transfer if you prefer. Payment is to Victoria Law Firm. For instructions involving retrieval, drafting or multiple documents we issue a written quotation first, so you always know the total before anything is paid."
+    },
+    {
+      "q": "Is my document safe with you?",
+      "a": "Originals are held in the firm's safe custody between lodgement and dispatch, and are sent by tracked international courier with the tracking number sent to you the day they leave us. We are a law firm: your documents and your instructions are covered by professional confidentiality."
+    }
+  ],
+
+  "steps": [
+    { "n": "01", "title": "Tell us what you need", "body": "Message us on WhatsApp or send the form. Describe the document and the country it is going to — that second part decides the route." },
+    { "n": "02", "title": "We confirm the route and the price", "body": "You get a written confirmation of what is required, what it costs, and how long it will take. No work starts before you agree it." },
+    { "n": "03", "title": "Documents prepared and lodged", "body": "We certify, notarise or retrieve as needed, then lodge at the Supreme Court and attend to collection ourselves." },
+    { "n": "04", "title": "Delivered to you", "body": "Scanned copy the day the apostille is issued, originals by tracked courier to any address worldwide." }
+  ],
+
+  "trust": [
+    { "stat": "1979", "label": "Seychelles a party to the Hague Apostille Convention" },
+    { "stat": "120+", "label": "Countries that accept an apostille without further legalisation" },
+    { "stat": "2–3 days", "label": "Typical turnaround once documents are in order" },
+    { "stat": "Worldwide", "label": "Tracked courier delivery of originals" }
+  ]
+}

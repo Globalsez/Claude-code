@@ -1,0 +1,75 @@
+{
+  "out": "pricing.html",
+  "nav": "pricing",
+  "priority": "0.9",
+  "title": "Prices & Payment | Apostille Seychelles",
+  "description": "Transparent per-document pricing for Seychelles apostille and legalisation services, with secure payment by PayPal to Victoria Law Firm."
+}
+---
+<section class="page-head">
+  <div class="wrap">
+    <p class="crumbs"><a href="{{BASE}}index.html">Home</a> · Pricing</p>
+    <span class="eyebrow">Prices &amp; payment</span>
+    <h1 style="margin-top:.75rem">What it costs</h1>
+    <p class="lede" style="margin-top:1rem;max-width:60ch">
+      Per document, in {{CURRENCY}}. Pay online by PayPal, or ask for an invoice and settle by bank transfer.
+    </p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:clamp(2rem,4vw,3rem)">
+  <div class="wrap">
+    {{PRICING_TABLE}}
+    <div class="pay-note">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg>
+      <span>{{PRICING_NOTE}}</span>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt" style="padding-top:clamp(2rem,4vw,3rem)">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Pay online</span>
+      <h2>Secure payment by PayPal</h2>
+      <p class="lede muted">Payment is taken by {{LEGAL_NAME}}. You can pay with a PayPal balance or any major card through PayPal — no PayPal account is required to pay by card.</p>
+    </div>
+    <div class="grid grid--2">{{PRICING_CARDS}}</div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="grid grid--2" style="gap:clamp(2rem,5vw,4rem);align-items:start">
+      <div class="stack">
+        <span class="eyebrow">What is and is not included</span>
+        <h2>No fee you have not been told about</h2>
+        <p>
+          The price against each service covers our professional fee and the Supreme Court apostille fee for that
+          document. Three things are quoted separately, because they depend on your matter and we will not pad a
+          headline price with them:
+        </p>
+        <ul class="ticks">
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg><span><strong>Courier</strong> — at cost, by destination and weight. Scanned copies are always free.</span></li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg><span><strong>Registry retrieval</strong> — where a record has to be obtained before it can be legalised.</span></li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m20 6-11 11-5-5"/></svg><span><strong>Drafting</strong> — where a document has to be written or substantially redrawn, not merely legalised.</span></li>
+        </ul>
+        <p style="margin-top:1.25rem">
+          Multiple documents in one instruction are quoted as a set and cost less per document than the rates above.
+          Ask, and we will price the whole pack.
+        </p>
+      </div>
+      <div class="card" style="background:var(--sand-100);border-color:var(--sand-300)">
+        <span class="card__icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></span>
+        <h3>Paying by bank transfer</h3>
+        <p>
+          If you would rather not use PayPal, ask for an invoice and we will send our account details with it.
+          For corporate instructions and law-firm referrals we invoice on completion as standard.
+        </p>
+        <div class="card__foot">
+          <a class="btn btn--block" href="{{BASE}}contact.html">Request an invoice</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,76 @@
+{
+  "out": "contact.html",
+  "nav": "contact",
+  "priority": "0.8",
+  "title": "Contact | Apostille Seychelles — Victoria Law Firm",
+  "description": "Contact Apostille Seychelles by WhatsApp, email or telephone. Victoria Law Firm, Victoria, Mahé, Republic of Seychelles."
+}
+---
+<section class="page-head">
+  <div class="wrap">
+    <p class="crumbs"><a href="{{BASE}}index.html">Home</a> · Contact</p>
+    <span class="eyebrow">Get in touch</span>
+    <h1 style="margin-top:.75rem">Contact us</h1>
+    <p class="lede" style="margin-top:1rem;max-width:60ch">
+      WhatsApp is the fastest route and the one most clients use — send a photograph of the document and we can usually
+      tell you the route and the price in the same conversation.
+    </p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:clamp(2rem,4vw,3rem)">
+  <div class="wrap contact-grid">
+    <div>
+      <h2 style="font-size:clamp(1.4rem,2.5vw,1.85rem)">Send an enquiry</h2>
+      <p class="muted small" style="margin:.6rem 0 1.75rem">
+        This form opens WhatsApp with your details filled in, so nothing is stored on this website.
+        {{EMAIL_SENTENCE}}
+      </p>
+
+      <form id="enquiryForm" data-whatsapp="{{WA_FORM}}" data-email="{{EMAIL_FORM}}" novalidate>
+        <div class="field-row">
+          <div class="field">
+            <label for="f-name">Your name</label>
+            <input id="f-name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="f-email">Email</label>
+            <input id="f-email" name="email" type="email" autocomplete="email" required>
+          </div>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="f-country">Country the document is for</label>
+            <input id="f-country" name="country" type="text" placeholder="e.g. United Arab Emirates" required>
+          </div>
+          <div class="field">
+            <label for="f-service">What do you need?</label>
+            <select id="f-service" name="service" required>
+              <option value="">Please choose…</option>
+              {{SERVICE_OPTIONS}}
+              <option value="Something else">Something else</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label for="f-message">Tell us about the document</label>
+          <textarea id="f-message" name="message" placeholder="What the document is, who issued it, and whether you hold the original." required></textarea>
+        </div>
+        <button class="btn btn--block" type="submit">Send enquiry</button>
+        <p class="small muted" id="formStatus" role="status" aria-live="polite" style="margin-top:.75rem;text-align:center"></p>
+      </form>
+    </div>
+
+    <aside class="contact-panel">
+      <h3>{{LEGAL_NAME}}</h3>
+      <p style="color:rgba(240,228,211,.8);margin-top:.5rem">Apostille and document legalisation, Republic of Seychelles.</p>
+      {{CONTACT_DETAILS}}
+      <p style="margin-top:1.75rem">
+        <a class="btn btn--wa btn--block" href="{{WA_LINK}}"{{WA_TARGET}}>{{WA_ICON}}<span>Open WhatsApp</span></a>
+      </p>
+      <p class="small" style="margin-top:1rem;color:rgba(240,228,211,.55)">
+        Seychelles is GMT+4. Messages received outside office hours are answered the next working morning.
+      </p>
+    </aside>
+  </div>
+</section>

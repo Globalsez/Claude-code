@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{TITLE}}</title>
+<meta name="description" content="{{DESCRIPTION}}">
+<link rel="canonical" href="{{CANONICAL}}">
+<meta name="theme-color" content="#C4674A">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="{{SITE_NAME}}">
+<meta property="og:title" content="{{TITLE}}">
+<meta property="og:description" content="{{DESCRIPTION}}">
+<meta property="og:url" content="{{CANONICAL}}">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="{{BASE}}assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="{{BASE}}assets/img/favicon.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Inter:wght@400;500;600;700&display=swap">
+<script>document.documentElement.className+=" js";</script>
+<link rel="stylesheet" href="{{BASE}}assets/css/styles.css">
+
+<script type="application/ld+json">{{JSONLD}}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="header" id="siteHeader">
+  <div class="wrap header__inner">
+    <a class="brand" href="{{BASE}}index.html">
+      <svg class="brand__mark" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+        <circle cx="24" cy="24" r="23" fill="#17968F"/>
+        <path d="M24 8c6 5.5 9 10.5 9 16a9 9 0 1 1-18 0c0-5.5 3-10.5 9-16Z" fill="#F8F1E7"/>
+        <path d="M24 16c2.6 2.6 4 5 4 8a4 4 0 1 1-8 0c0-3 1.4-5.4 4-8Z" fill="#C4674A"/>
+        <path d="M10 38c4-2.5 7-2.5 11 0 4 2.5 7 2.5 11 0" stroke="#D9A441" stroke-width="2.4" stroke-linecap="round"/>
+      </svg>
+      <span>
+        <span class="brand__name">{{SITE_NAME}}</span>
+        <span class="brand__sub">{{LEGAL_NAME}}</span>
+      </span>
+    </a>
+
+    <nav class="nav" id="primaryNav" aria-label="Primary">
+      <a href="{{BASE}}index.html" data-nav="home">Home</a>
+      <a href="{{BASE}}services.html" data-nav="services">Services</a>
+      <a href="{{BASE}}pricing.html" data-nav="pricing">Pricing</a>
+      <a href="{{BASE}}how-it-works.html" data-nav="how">How it works</a>
+      <a href="{{BASE}}faq.html" data-nav="faq">FAQ</a>
+      <a href="{{BASE}}contact.html" data-nav="contact">Contact</a>
+    </nav>
+
+    <div class="header__cta">
+      <a class="btn btn--ghost btn--sm" href="{{BASE}}pricing.html">Prices</a>
+      <a class="btn btn--wa btn--sm" href="{{WA_LINK}}"{{WA_TARGET}}>{{WA_ICON}}<span>WhatsApp</span></a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="primaryNav" aria-label="Menu"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+{{BODY}}
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div>
+        <span class="brand__name" style="font-family:var(--font-display);font-size:1.15rem">{{SITE_NAME}}</span>
+        <p style="margin-top:.7rem;max-width:34ch">{{TAGLINE}}</p>
+        <p style="margin-top:1rem"><a class="btn btn--wa btn--sm" href="{{WA_LINK}}"{{WA_TARGET}}>{{WA_ICON}}<span>{{WA_DISPLAY}}</span></a></p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="{{BASE}}services.html#seychelles-company">Seychelles company</a></li>
+          <li><a href="{{BASE}}apostille-british-virgin-islands-company-documents/index.html">BVI company</a></li>
+          <li><a href="{{BASE}}services.html#power-of-attorney">Power of attorney</a></li>
+          <li><a href="{{BASE}}services.html#personal-documents">Personal certificates</a></li>
+          <li><a href="{{BASE}}services.html#educational">Educational documents</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="{{BASE}}how-it-works.html">How it works</a></li>
+          <li><a href="{{BASE}}pricing.html">Pricing</a></li>
+          <li><a href="{{BASE}}faq.html">FAQ</a></li>
+          <li><a href="{{BASE}}contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in touch</h4>
+        <ul>
+          <li>{{EMAIL_LINK}}</li>
+          <li>{{ADDRESS_HTML}}</li>
+          <li>{{HOURS}}</li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="footer__disclaimer">
+      {{SITE_NAME}} is a service of {{LEGAL_NAME}}. Apostilles for documents issued in Seychelles are issued by the
+      Supreme Court of Seychelles; we prepare, lodge and collect them on your behalf. Information on this site is general
+      and is not legal advice for your particular matter — contact us and we will advise on your documents specifically.
+    </p>
+
+    <div class="footer__bottom">
+      <span>&copy; {{YEAR}} {{LEGAL_NAME}}. All rights reserved.</span>
+      <span>Victoria, Mahé · Republic of Seychelles</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="{{WA_LINK}}"{{WA_TARGET}} aria-label="Contact us on WhatsApp">{{WA_ICON}}<span>Chat with us</span></a>
+
+{{PAYPAL_BOOT}}
+<script src="{{BASE}}assets/js/main.js" defer></script>
+</body>
+</html>
