@@ -26,9 +26,8 @@
   "paypal": {
     "_note": "mode = 'paypalme' (only needs handle) or 'sdk' (needs clientId from a PayPal REST app). 'sdk' renders real PayPal Smart Buttons; 'paypalme' renders a pre-filled PayPal.Me payment link. If neither is configured the site falls back to a 'Request an invoice' button, so it never shows a broken checkout.",
     "mode": "paypalme",
-    "payPalMeHandle": "TODO_PAYPALME_HANDLE",
+    "payPalMeHandle": "victorialawfirm",
     "clientId": "",
-    "businessEmail": "TODO_PAYPAL_BUSINESS_EMAIL",
     "currency": "USD",
     "accountName": "Victoria Law Firm"
   },
@@ -50,7 +49,7 @@
         "Scanned copy released same day as issue"
       ],
       "turnaround": "2–3 business days",
-      "price": null,
+      "price": 250,
       "popular": true,
       "icon": "building"
     },
@@ -65,7 +64,7 @@
         "Worldwide courier of originals"
       ],
       "turnaround": "3–5 business days",
-      "price": null,
+      "price": 250,
       "popular": false,
       "icon": "globe"
     },
@@ -80,7 +79,7 @@
         "Certified copies on request"
       ],
       "turnaround": "2–3 business days",
-      "price": null,
+      "price": 250,
       "popular": false,
       "icon": "seal"
     },
@@ -95,7 +94,7 @@
         "Tracked international delivery"
       ],
       "turnaround": "2–4 business days",
-      "price": null,
+      "price": 250,
       "popular": false,
       "icon": "certificate"
     },
@@ -110,7 +109,7 @@
         "Digital copy on completion"
       ],
       "turnaround": "3–5 business days",
-      "price": null,
+      "price": 250,
       "popular": false,
       "icon": "cap"
     },
@@ -125,7 +124,7 @@
         "Progress updates by WhatsApp"
       ],
       "turnaround": "24–48 hours where the Court permits",
-      "price": null,
+      "price": 250,
       "popular": false,
       "icon": "bolt"
     }
