@@ -1,6 +1,5 @@
 {
   "_readme": "SINGLE SOURCE OF TRUTH. Edit this file, then run `node build.js`. Anything marked TODO must be filled in before going live.",
-
   "site": {
     "name": "Apostille Seychelles",
     "legalName": "Victoria Law Firm",
@@ -10,10 +9,9 @@
     "locale": "en_GB",
     "founded": "Victoria, Mahé, Republic of Seychelles"
   },
-
   "contact": {
-    "whatsapp": "TODO_WHATSAPP_E164",
-    "whatsappDisplay": "TODO — e.g. +248 2 XXX XXX",
+    "whatsapp": "2482515565",
+    "whatsappDisplay": "+248 2 515 565",
     "whatsappMessage": "Hello Apostille Seychelles — I would like a quote for an apostille.",
     "email": "TODO_EMAIL",
     "phone": "TODO_PHONE",
@@ -25,7 +23,6 @@
     ],
     "hours": "Monday to Friday, 08:30 – 16:30 (Seychelles time, GMT+4)"
   },
-
   "paypal": {
     "_note": "mode = 'paypalme' (only needs handle) or 'sdk' (needs clientId from a PayPal REST app). 'sdk' renders real PayPal Smart Buttons; 'paypalme' renders a pre-filled PayPal.Me payment link. If neither is configured the site falls back to a 'Request an invoice' button, so it never shows a broken checkout.",
     "mode": "paypalme",
@@ -35,20 +32,23 @@
     "currency": "USD",
     "accountName": "Victoria Law Firm"
   },
-
   "pricing": {
     "_note": "TODO: replace every null with the price currently quoted on the live site. null renders as 'Price on request' and disables that card's pay button.",
     "currency": "USD",
     "currencySymbol": "$",
     "note": "Prices are per document and include the Supreme Court apostille fee. Courier and notarisation are quoted separately where applicable."
   },
-
   "services": [
     {
       "id": "seychelles-company",
       "name": "Seychelles Company Documents",
       "blurb": "Certificate of Incorporation, Memorandum & Articles, Certificate of Good Standing, Incumbency, registers of directors and shareholders — retrieved, certified and apostilled.",
-      "includes": ["Registry retrieval where required", "Notarial certification of copies", "Supreme Court apostille", "Scanned copy released same day as issue"],
+      "includes": [
+        "Registry retrieval where required",
+        "Notarial certification of copies",
+        "Supreme Court apostille",
+        "Scanned copy released same day as issue"
+      ],
       "turnaround": "2–3 business days",
       "price": null,
       "popular": true,
@@ -58,7 +58,12 @@
       "id": "bvi-company",
       "name": "BVI Company Documents",
       "blurb": "British Virgin Islands corporate records legalised for banking, redomiciliation and cross-border transactions — the documents compliance teams ask for, in the form they accept.",
-      "includes": ["Certificate of Incorporation & Good Standing", "Registered agent certification", "Apostille under the Hague Convention", "Worldwide courier of originals"],
+      "includes": [
+        "Certificate of Incorporation & Good Standing",
+        "Registered agent certification",
+        "Apostille under the Hague Convention",
+        "Worldwide courier of originals"
+      ],
       "turnaround": "3–5 business days",
       "price": null,
       "popular": false,
@@ -68,7 +73,12 @@
       "id": "power-of-attorney",
       "name": "Power of Attorney",
       "blurb": "Drafted or reviewed by a Seychelles attorney, executed before a notary, then apostilled — so it is accepted first time by the receiving jurisdiction.",
-      "includes": ["Attorney review of wording", "Notarial execution", "Supreme Court apostille", "Certified copies on request"],
+      "includes": [
+        "Attorney review of wording",
+        "Notarial execution",
+        "Supreme Court apostille",
+        "Certified copies on request"
+      ],
       "turnaround": "2–3 business days",
       "price": null,
       "popular": false,
@@ -78,7 +88,12 @@
       "id": "personal-documents",
       "name": "Personal Certificates",
       "blurb": "Birth, marriage and death certificates, police clearance and affidavits — legalised for immigration, marriage abroad, residency and citizenship applications.",
-      "includes": ["Civil Status retrieval where required", "Certified true copies", "Supreme Court apostille", "Tracked international delivery"],
+      "includes": [
+        "Civil Status retrieval where required",
+        "Certified true copies",
+        "Supreme Court apostille",
+        "Tracked international delivery"
+      ],
       "turnaround": "2–4 business days",
       "price": null,
       "popular": false,
@@ -88,7 +103,12 @@
       "id": "educational",
       "name": "Educational Documents",
       "blurb": "Degrees, diplomas and academic transcripts authenticated and apostilled for employment, professional registration and further study overseas.",
-      "includes": ["Verification with the issuing institution", "Notarial certification", "Supreme Court apostille", "Digital copy on completion"],
+      "includes": [
+        "Verification with the issuing institution",
+        "Notarial certification",
+        "Supreme Court apostille",
+        "Digital copy on completion"
+      ],
       "turnaround": "3–5 business days",
       "price": null,
       "popular": false,
@@ -98,14 +118,18 @@
       "id": "express",
       "name": "Express Handling",
       "blurb": "Priority preparation and lodgement for time-critical closings, bank account openings and filing deadlines. Add to any service above.",
-      "includes": ["Priority preparation same day", "Lodged at the next available Court session", "Named point of contact", "Progress updates by WhatsApp"],
+      "includes": [
+        "Priority preparation same day",
+        "Lodged at the next available Court session",
+        "Named point of contact",
+        "Progress updates by WhatsApp"
+      ],
       "turnaround": "24–48 hours where the Court permits",
       "price": null,
       "popular": false,
       "icon": "bolt"
     }
   ],
-
   "faqs": [
     {
       "q": "What is an apostille?",
@@ -136,18 +160,44 @@
       "a": "Originals are held in the firm's safe custody between lodgement and dispatch, and are sent by tracked international courier with the tracking number sent to you the day they leave us. We are a law firm: your documents and your instructions are covered by professional confidentiality."
     }
   ],
-
   "steps": [
-    { "n": "01", "title": "Tell us what you need", "body": "Message us on WhatsApp or send the form. Describe the document and the country it is going to — that second part decides the route." },
-    { "n": "02", "title": "We confirm the route and the price", "body": "You get a written confirmation of what is required, what it costs, and how long it will take. No work starts before you agree it." },
-    { "n": "03", "title": "Documents prepared and lodged", "body": "We certify, notarise or retrieve as needed, then lodge at the Supreme Court and attend to collection ourselves." },
-    { "n": "04", "title": "Delivered to you", "body": "Scanned copy the day the apostille is issued, originals by tracked courier to any address worldwide." }
+    {
+      "n": "01",
+      "title": "Tell us what you need",
+      "body": "Message us on WhatsApp or send the form. Describe the document and the country it is going to — that second part decides the route."
+    },
+    {
+      "n": "02",
+      "title": "We confirm the route and the price",
+      "body": "You get a written confirmation of what is required, what it costs, and how long it will take. No work starts before you agree it."
+    },
+    {
+      "n": "03",
+      "title": "Documents prepared and lodged",
+      "body": "We certify, notarise or retrieve as needed, then lodge at the Supreme Court and attend to collection ourselves."
+    },
+    {
+      "n": "04",
+      "title": "Delivered to you",
+      "body": "Scanned copy the day the apostille is issued, originals by tracked courier to any address worldwide."
+    }
   ],
-
   "trust": [
-    { "stat": "1979", "label": "Seychelles a party to the Hague Apostille Convention" },
-    { "stat": "120+", "label": "Countries that accept an apostille without further legalisation" },
-    { "stat": "2–3 days", "label": "Typical turnaround once documents are in order" },
-    { "stat": "Worldwide", "label": "Tracked courier delivery of originals" }
+    {
+      "stat": "1979",
+      "label": "Seychelles a party to the Hague Apostille Convention"
+    },
+    {
+      "stat": "120+",
+      "label": "Countries that accept an apostille without further legalisation"
+    },
+    {
+      "stat": "2–3 days",
+      "label": "Typical turnaround once documents are in order"
+    },
+    {
+      "stat": "Worldwide",
+      "label": "Tracked courier delivery of originals"
+    }
   ]
 }
